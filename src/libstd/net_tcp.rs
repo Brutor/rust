@@ -1290,6 +1290,7 @@ mod test {
     #[cfg(target_os="win32")]
     #[cfg(target_os="darwin")]
     #[cfg(target_os="linux")]
+    #[cfg(target_os="android")]
     mod tcp_ipv4_server_and_client_test {
         #[cfg(target_arch="x86_64")]
         mod impl64 {
@@ -1325,6 +1326,7 @@ mod test {
             }
         }
         #[cfg(target_arch="x86")]
+        #[cfg(target_arch="arm")]
         mod impl32 {
             use net::tcp::test::tcp_ipv4_server_and_client_test::*;
 
